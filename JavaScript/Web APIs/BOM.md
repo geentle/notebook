@@ -1,8 +1,8 @@
-#BOM
+# BOM
 
 ---
 
-###BOM概述
+### BOM概述
 
 浏览器对象模型
 
@@ -12,7 +12,7 @@ window是浏览器对象的顶级对象。
 
 window是一个全局对象。全局作用域中的变量、函数都会变成window对象的属性和方法。
 
-###窗口加载事件
+### 窗口加载事件
 
 `window.onload`: 页面完全加载完成会触发该事件。只能写一次，以最后一个为准。
 
@@ -25,7 +25,7 @@ window.addEventListener('load', function (){});
 document.addEventListener('DOMContentLoaded', function (){});
 ```
 
-###调整窗口大小
+### 调整窗口大小
 
 `resize`事件: 窗口大小发生变化就会触发事件。可以用于完成一些响应式布局
 
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function (){});
 window.addEventListener('resize', function (){});
 ```
 
-###定时器
+### 定时器
 
 * `window.setTimeout(callback, time)`: 到时间就调用一次
   * 停止定时器: `window.clearTimeout(timeoutID)`
@@ -44,14 +44,14 @@ window.addEventListener('resize', function (){});
 
 定时器里的`this`指向`window`。
 
-###JS执行队列
+### JS执行队列
 
 JavaScript是单线程的。所以的任务都要排队。
 
-#####同步和异步
+##### 同步和异步
 HTML5提出 Web Worker 标准，允许 JavaScript 脚本创建多个线程。于是出现了同步和异步。
 
-######同步
+###### 同步
 前一个任务结束后再执行后一个任务。
 
 ###### 异步
@@ -68,7 +68,7 @@ HTML5提出 Web Worker 标准，允许 JavaScript 脚本创建多个线程。于
 
 ![](C:\Users\93932\Pictures\Saved Pictures\js\JS任务执行机制.png)JS执行机制
 
-#####location对象
+##### location对象
 window对象给我们提供了一个location属性用于获取或设置窗体的URL，并且可以用于解析URL。
 
 location对象属性
@@ -83,10 +83,10 @@ location对象方法
 * replace()
 * reload()
 
-#####navigator对象
+##### navigator对象
 navigator对象包含有关浏览器的信息，有很多属性。比如userAgent属性可以返回user-agent头部的值。
 
-#####history对象
+##### history对象
 window对象给我们提供了一个history对象，与浏览器历史记录进行交互
 
 
