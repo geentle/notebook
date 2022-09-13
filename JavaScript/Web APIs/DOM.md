@@ -2,7 +2,7 @@
 
 ---
 
-##获取元素
+## 获取元素
 
 * 根据ID：`document.getElementByID()`
 * 根据标签名获取：`getElementsByTagName()`
@@ -14,11 +14,10 @@
   * 获取body：`document.body`
   * 获取html：`document.documentElement`
 
-##事件
+## 事件
 
-###事件基础
-
-####操作元素
+### 事件基础   
+#### 操作元素
 * 修改元素内容
   * `element.innerText`: 不识别HTML标签
   * `element.innerHTML`: 识别HTML标签
@@ -33,7 +32,7 @@
 * H5自定义属性
   * `data-`开头，比如`data-index="1"`
 
-####节点操作
+#### 节点操作
 * 最近的父节点：`element.parentNode`
 * 所有子节点(包括元素节点和文本节点)：`element.childNodes`
 * 所有子节点中的元素节点：`element.children`
@@ -51,7 +50,7 @@
 * 复制节点：`node.cloneNode()`
 * 创建元素：`document.write()`
 
-######write、innerHTML和createElement效率对比
+###### write、innerHTML和createElement效率对比
 * `document.write()`
 * `element.innerHTML()`
 * `document.createElement()`
